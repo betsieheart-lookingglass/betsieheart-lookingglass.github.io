@@ -5,14 +5,14 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script src="js/play-on-click.js"></script>
     <body style="margin : 0px; overflow: hidden;">
-        <a-scene arjs>
+        <a-scene embedded arjs>
             <a-assets>
                 <img id="strawberry" src="assets/strawberry.png">
                 <img id="tea" src="assets/example2_tea.png">
                 <img id="rabbithole" src"assets/example3_rabbithole.png>
             </a-assets>
             <a-marker type="pattern" preset="custom" url="https://betsieheart-lookingglass.github.io/marker/fancy-frame-1-border.patt">
-                <a-image src="#strawberry" rotation="90 0 0"></a-image>
+                <a-image src="#strawberry" scale="2 2 1"></a-image>
             </a-marker>
             <a-marker type="pattern" preset="custom" url="https://betsieheart-lookingglass.github.io/marker/fancy-frame2.patt">
                 <a-image src="#tea" scale="2 2 1"></a-image>
